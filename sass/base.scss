@@ -1,0 +1,65 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --container-color: #F2F2F2;
+    --color-grey-light: #EEEEEE;
+    --color-grey: #EBEBEB;
+    --color-green-light: #60777c;
+    --selection-color: #4f8d5b;
+    --color-transparent: #CACACA;
+    --color-blue: #0888C8;
+    --color-blue-dark: #0074c2;
+    
+
+    --body-font: 'Roboto', sans-serif;
+    --greater-font-size: 7.2rem;
+    --heading-font-size: 5.6rem;
+    --title-font-size: 4rem;
+    --medium-font-size: 2.2rem;
+    --text-font-size: 1.8rem;
+    --smaller-font-size: 1.4rem;
+    --tiny-font-size: 1.2rem;
+    --light-font-weight: 300;
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --bold-font-weight: 700;
+
+    --z-smaller: -10;
+    --z-small: 0;
+    --z-medium: 15;
+    --z-higher: 100;
+    --z-greater: 1000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+      box-sizing: border-box;
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--body-font);
+    font-weight: 400;
+    background-color: var(--container-color);
+  }
+
+  ::selection {
+    background-color: var(--selection-color);
+  }
+
+  .accordion-open .questions__icon {
+    transform: rotate(45deg);
+  }
